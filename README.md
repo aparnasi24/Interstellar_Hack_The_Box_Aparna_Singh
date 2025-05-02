@@ -1,10 +1,10 @@
 # Hack The Box: Interstellar Challenge – Exploitation Script
 
-This repository contains a series of `curl` commands used to exploit the **Interstellar** machine on [Hack The Box](https://www.hackthebox.com/). The attack chain demonstrates the exploitation of an insecure internal service via SSRF and SQL injection, leading to remote code execution.
+This repository contains a set of commands used to exploit the **Interstellar** machine on [Hack The Box](https://www.hackthebox.com/) using the tool 'Curl'. This attack showcases the exploitation of an insecure internal service via SSRF and SQL injection, leading to remote code execution.
 
 ## Overview
 
-This script walks through the exploitation steps in the following order:
+Below are the steps:
 
 1. **User Registration & Login**  
 2. **Session Capture via Cookies**
@@ -25,7 +25,4 @@ Each step is annotated for clarity and uses `curl` to interact with the vulnerab
 
 ## Usage
 
-Run each command step-by-step in your terminal. Ensure `curl` is installed and your environment allows outbound HTTP connections.
-
-```bash
-bash interstellar_attack_commands.sh
+Run each command step-by-step in your terminal. Ensure `curl` is installed and your environment allows outbound HTTP connections
