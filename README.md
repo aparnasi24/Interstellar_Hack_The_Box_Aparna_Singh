@@ -1,6 +1,6 @@
 # Hack The Box: Interstellar Challenge – Exploitation Script
 
-This repository contains a set of commands used to exploit the **Interstellar** machine on [Hack The Box](https://www.hackthebox.com/) using the tool 'Curl'. This attack showcases the exploitation of an insecure internal service via SSRF and SQL injection, leading to remote code execution.
+This repository contains a set of commands used to exploit the **Interstellar** machine on [Hack The Box](https://www.hackthebox.com/) using two menthods. The first method is through tool 'Curl' and the second mentod is through python code. This attack showcases the exploitation of an insecure internal service via SSRF and SQL injection, leading to remote code execution.
 
 ## Overview
 
